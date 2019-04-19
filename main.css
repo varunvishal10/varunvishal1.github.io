@@ -141,7 +141,6 @@ li{
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	position : sticky;
 	transform: translate(-50%,50%);
 	width: 100%;
 	text-align: center;
@@ -181,7 +180,7 @@ li{
 .about-heading h1{
 	font-size: 10rem;
 	opacity: .2;
-	position:fixed;
+	
 }
 
 .about-heading h5{
