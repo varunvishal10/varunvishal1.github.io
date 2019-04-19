@@ -7,19 +7,23 @@
 
 html{
 	font-size: 10px;
-	font-family: 'Righteous', cursive !important;
+	font-family: 'Roboto' , sans-serif;
 	color: #eee;
 }
 
 body{
 	width: 100%;
 	height: 100%;
-	background-image: "sitebg.jpg" ;
+	background: #36D1DC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #5B86E5, #36D1DC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #5B86E5, #36D1DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 	 background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; 
     background-size: cover;
-
+    
 }
 
 a{
@@ -48,7 +52,10 @@ header{
 	position: fixed;
 	top: -100vh;
 	z-index: 50;
-	background-color: #16162d; 
+	background: #4b6cb7; 
+background: -webkit-linear-gradient(to top, #182848, #4b6cb7);  
+background: linear-gradient(to top, #182848, #4b6cb7);
+
   	border-bottom-left-radius: 100%;
 	border-bottom-right-radius: 100%;
 	transition: all 650ms cubic-bezier(1,0,0,1);
@@ -109,10 +116,12 @@ li{
 }
 
 .bar{
-	background: linear-gradient(to top , 	#FF7F50 ,#FFD700);
+	background: #0f0c29;
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); 
 	width: 100%;
 	height: 4px;
-	border-radius: .8rem;
+	border-radius: 1rem;
 }
 
 .bar.half{
@@ -123,6 +132,7 @@ li{
 .bar.start{
 	transform-origin: right;
 	transition: transform 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+	left: 80px;
 }
 
 .open .bar.start{
@@ -151,11 +161,10 @@ li{
 
 .landing-text h1{
 	font-size: 12rem;
-	font-family: 'impact', sans-serif;
-     background: linear-gradient(to right, #ffe838 , #fd57bf);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent ;
+	font-family: "impact" , serif;
+     color: #16162d;
 	padding: 1rem;
+	opacity: .7;
 	user-select: none;
 }
 
@@ -180,13 +189,15 @@ li{
 }
 .about-heading h1{
 	font-size: 10rem;
-	opacity: .2;
+	color: #16162d;
+	opacity: .3;
 }
 
 .about-heading h5{
 	font-size: 2rem;
+	font-family: 'BodySoul personal Use', sans-serif;
 	font-weight: 300;
-	opacity: .6;
+	opacity: .8;
 }
 
 .profile-img{
@@ -197,4 +208,21 @@ li{
 
 .about-details{
 	flex: 1;
+}
+
+.portfolio-img{
+	flex: 1;
+	margin-right: 5rem;
+	background-size: 25%;
+
+}
+
+.section-heading h1{
+	font-size: 10rem;
+	color: #16162d;
+	opacity: .3;
+	text-align:right;
+	text-transform: uppercase;
+	line-height: 0;
+	margin-bottom: 6rem;
 }
