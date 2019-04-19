@@ -141,7 +141,7 @@ li{
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	position : absolute;
+	position : sticky;
 	transform: translate(-50%,50%);
 	width: 100%;
 	text-align: center;
